@@ -38,3 +38,9 @@ li {
 img {
   width: 100%;
 }
+
+/* Navbar */
+.navbar__logo {
+  width: 112px;
+  /* height: 36px; */
+}
