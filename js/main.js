@@ -3,6 +3,8 @@
 // **************************
 const mobileToggle = document.querySelector(".navbar__mobile-menu-toggle");
 const mobileList = document.querySelector(".navbar__mobile-menu-list");
+// select icon inside button
+const icon = mobileToggle.querySelector("i");
 
 mobileToggle.addEventListener("click", (e) => {
   mobileList.classList.toggle("active");
@@ -12,8 +14,6 @@ mobileToggle.addEventListener("click", (e) => {
   // **********************************
 
   mobileToggle.classList.toggle("active");
-  // select icon inside button
-  const icon = mobileToggle.querySelector("i");
 
   // replace icon  that is currently displayed
   if (icon.classList.contains("fa-bars")) {
