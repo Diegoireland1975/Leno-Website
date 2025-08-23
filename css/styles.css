@@ -112,7 +112,7 @@ img {
 
 /* transfrom hamburger icon into X */
 .navbar__mobile-menu-toggle i {
-  transition: 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .navbar__mobile-menu-toggle.active i {
