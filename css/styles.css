@@ -100,6 +100,7 @@ img {
 
 /* Mobile Menu */
 .navbar__mobile-menu-toggle {
+  all: unset; /* resets all button styles */
   background: none;
   border: none;
   color: inherit; /* keeps same text/icon color as parent */
