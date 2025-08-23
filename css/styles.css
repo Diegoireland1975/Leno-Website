@@ -110,6 +110,15 @@ img {
   cursor: pointer;
 }
 
+/* transfrom hamburger icon into X */
+.navbar__mobile-menu-toggle i {
+  transition: 0.3s ease-in-out;
+}
+
+.navbar__mobile-menu-toggle.active i {
+  transform: rotate(90deg);
+}
+
 .navbar__mobile-menu-list {
   background: var(--secondary-color);
   position: absolute;
