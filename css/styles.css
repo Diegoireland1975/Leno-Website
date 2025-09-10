@@ -70,6 +70,12 @@ img {
   transition: background-color 0.3s ease-in-out;
 }
 
+/* change background color and blur */
+.navbar.navbar--scroll {
+  background-color: rgba(38, 36, 49, 0.8);
+  backdrop-filter: blur(10px);
+}
+
 .navbar__logo {
   width: 112px;
   height: 36px;
