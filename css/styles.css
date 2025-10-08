@@ -285,6 +285,27 @@ img {
   padding: 0 1rem;
 }
 
+/* ////////////////*/
+/* /* Features Section  */
+/* ////////////// */
+
+.features {
+  background: var(--tertiary-color);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.features__grid {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.features__grid-column-image img {
+  max-width: 300px;
+}
 /* ############### */
 /* MEDIA QUERIES */
 /* ############### */
@@ -325,6 +346,7 @@ img {
     justify-content: space-between;
     gap: 4rem;
   }
+
   .hero__title {
     font-size: 3.5rem;
   }
@@ -343,5 +365,19 @@ img {
 
   .testimonials__card:nth-child(3) {
     display: inline;
+  }
+
+  .features__grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  /* Left items column stays in column 1 */
+  .features__grid-column-left {
+    grid-row: 1;
+  }
+
+  .image-column {
+    grid-column: 2;
   }
 }
