@@ -19,12 +19,17 @@ html {
 }
 
 /* Base style */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background: var(--secondary-color);
   color: #fff;
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 a {
@@ -38,6 +43,8 @@ li {
 
 img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* utility classes */
