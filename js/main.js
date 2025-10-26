@@ -32,3 +32,31 @@ window.addEventListener("scroll", (e) => {
     navbar.classList.remove("navbar--scroll");
   }
 });
+
+// Video Modal
+const modal = document.getElementById("videoModal");
+const videoButton = document.getElementById("preview__video-button");
+const closeBtn = document.getElementById("modal__close-btn");
+const videoPlayer = document.getElementById("videoPlayer");
+
+// open modal on click
+videoButton.addEventListener("click", () => {
+  modal.style.display = "block";
+});
+
+// replace the src attribute with the video URL
+videoPlayer.src = "https://www.youtube.com/embed/8sXRyHI3bLw";
+
+// close modal clicking the close button
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+  videoPlayer.src = "";
+});
+
+// close modal clicking outside the modal content
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+    videoPlayer.src = "";
+  }
+});
