@@ -590,6 +590,7 @@ img {
 
   /* Modal */
   .modal__content {
+    width: 100%;
     max-width: 600px;
     margin: 10% auto;
   }
