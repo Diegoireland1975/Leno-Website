@@ -235,8 +235,7 @@ img {
   margin-top: 2rem;
 }
 
-.hero__button,
-.download__button {
+.hero__button {
   padding: 1rem 2rem;
 }
 
@@ -622,7 +621,7 @@ img {
 .download {
   background: url("/images/download-background.jpg") no-repeat center
     center/cover;
-  padding: 6rem 2rem;
+  padding: 10rem 1rem 8rem;
 }
 
 .download__container {
@@ -637,8 +636,13 @@ img {
 .download__description {
   font-size: 1.5rem;
   line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
+.download__button {
+  padding: 0.7;
+}
 /* ############### */
 /* MEDIA QUERIES */
 /* ############### */
@@ -766,16 +770,18 @@ img {
   }
 
   /* Download */
+  .download {
+    padding: 11.5rem 2rem 8rem;
+  }
   .download__container {
     flex-direction: row;
   }
 
-  .download__description {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
   .download__image img {
     max-width: 500px;
+  }
+
+  .download__button {
+    padding: 1rem 2rem;
   }
 }
