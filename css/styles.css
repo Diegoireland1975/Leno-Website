@@ -702,6 +702,68 @@ img {
   background: var(--tertiary-color);
   padding: 4rem 2rem 6rem;
 }
+
+.pricing__container {
+  text-align: center;
+  max-width: 1200px;
+}
+
+.pricing__title {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.pricing__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  flex: 1 1 300px;
+}
+
+.pricing__card-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+
+.pricing__card-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.pricing__card-price {
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pricing__card-list {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.pricing__card-list i {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+}
+
+.pricing__card-item {
+  margin-bottom: 0.5rem;
+}
+
+.pricing__card-button {
+  background-color: var(--primary-color);
+  color: #fff;
+}
 /* ############### */
 /* MEDIA QUERIES */
 /* ############### */
@@ -732,6 +794,11 @@ img {
 
   .testimonials__card:nth-child(2) {
     display: inline;
+  }
+
+  /* pricing */
+  .pricing__cards {
+    flex-direction: row;
   }
 }
 
@@ -863,4 +930,6 @@ img {
   .footer__socials {
     align-self: center;
   }
+
+  /* Details Page */
 }
