@@ -749,6 +749,7 @@ img {
 .pricing__card-list {
   text-align: left;
   white-space: nowrap;
+  font-weight: 300;
 }
 
 .pricing__card-list i {
@@ -763,6 +764,16 @@ img {
 .pricing__card-button {
   background-color: var(--primary-color);
   color: #fff;
+}
+
+/* Pricing Notes */
+.pricing__notes {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.pricing__notes-text {
+  color: #9f9caf;
 }
 /* ############### */
 /* MEDIA QUERIES */
