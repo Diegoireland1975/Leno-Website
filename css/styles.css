@@ -833,16 +833,17 @@ img {
   .testimonials__container {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     gap: 4rem;
+  }
+
+  .testimonials__card:nth-child(2) {
+    display: inline-flex;
   }
 
   /* Mobile Menu */
   .navbar__mobile-menu {
     display: none;
-  }
-
-  .testimonials__card:nth-child(2) {
-    display: inline;
   }
 
   /* pricing */
@@ -891,7 +892,7 @@ img {
   }
 
   .testimonials__card:nth-child(3) {
-    display: inline;
+    display: inline-flex;
   }
 
   .features__grid {
